@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () =>{
     function handleSubmitWord() {
         const currentWordArr = getCurrentWordArr()
         if(currentWordArr.length !== 5){
-            window.alert("Your word must be 5 letters")
+            return window.alert("Your word must be 5 letters")
         }
         const currentWord = currentWordArr.join('')
 
